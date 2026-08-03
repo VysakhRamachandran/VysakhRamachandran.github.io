@@ -1,0 +1,5 @@
+Place a profile photo here named "profile.jpg" for the Home section.
+Add any additional photos here for the Gallery section, then reference them
+in index.html inside the #galleryGrid element.
+
+Delete this file once you've added your images (or leave it — it won't affect the site).

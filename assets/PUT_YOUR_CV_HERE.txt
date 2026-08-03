@@ -1,0 +1,6 @@
+Place your CV PDF in this folder, named:
+
+    Vysakh_Ramachandran_CV.pdf
+
+The "Download CV" button on the Home section links to assets/Vysakh_Ramachandran_CV.pdf.
+Delete this file once your CV is added (or leave it — it won't affect the site).
