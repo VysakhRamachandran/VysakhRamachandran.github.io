@@ -344,9 +344,24 @@ ul { list-style: none; }
 .card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; }
 .card p { color: var(--text-muted); font-size: 0.95rem; }
 
+.research-card-media {
+  margin: 16px 0 18px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--bg-alt);
+}
+
+.research-card-media img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
 .card-badge {
   display: inline-block;
-  margin-top: 16px;
+  margin-top: 8px;
   font-family: var(--font-mono);
   font-size: 0.75rem;
   color: var(--accent);
