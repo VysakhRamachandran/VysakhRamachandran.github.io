@@ -40,43 +40,45 @@ navLinks.querySelectorAll('a').forEach((link) => {
   });
 });
 
-// ===== Contact form =====
+// ===== Contact form (only present on contact.html) =====
 const contactForm = document.getElementById('contactForm');
 const formStatus = document.getElementById('formStatus');
 
-contactForm.addEventListener('submit', async (e) => {
-  e.preventDefault();
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
 
-  const name = contactForm.name.value.trim();
-  const email = contactForm.email.value.trim();
-  const message = contactForm.message.value.trim();
-  const endpoint = contactForm.getAttribute('action');
+    const name = contactForm.name.value.trim();
+    const email = contactForm.email.value.trim();
+    const message = contactForm.message.value.trim();
+    const endpoint = contactForm.getAttribute('action');
 
-  // Formspree endpoint not configured yet: fall back to opening the user's email client.
-  if (!endpoint || endpoint.includes('YOUR_FORM_ID')) {
-    const subject = encodeURIComponent(`Message from ${name} via website`);
-    const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
-    window.location.href = `mailto:vysakhchandran02@gmail.com?subject=${subject}&body=${body}`;
-    formStatus.textContent = 'Opening your email client…';
-    return;
-  }
-
-  formStatus.textContent = 'Sending…';
-
-  try {
-    const response = await fetch(endpoint, {
-      method: 'POST',
-      headers: { Accept: 'application/json' },
-      body: new FormData(contactForm),
-    });
-
-    if (response.ok) {
-      formStatus.textContent = 'Thanks! Your message has been sent.';
-      contactForm.reset();
-    } else {
-      formStatus.textContent = 'Something went wrong. Please email me directly instead.';
+    // Formspree endpoint not configured yet: fall back to opening the user's email client.
+    if (!endpoint || endpoint.includes('YOUR_FORM_ID')) {
+      const subject = encodeURIComponent(`Message from ${name} via website`);
+      const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
+      window.location.href = `mailto:vysakhchandran02@gmail.com?subject=${subject}&body=${body}`;
+      formStatus.textContent = 'Opening your email client…';
+      return;
     }
-  } catch (err) {
-    formStatus.textContent = 'Network error. Please email me directly instead.';
-  }
-});
+
+    formStatus.textContent = 'Sending…';
+
+    try {
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: new FormData(contactForm),
+      });
+
+      if (response.ok) {
+        formStatus.textContent = 'Thanks! Your message has been sent.';
+        contactForm.reset();
+      } else {
+        formStatus.textContent = 'Something went wrong. Please email me directly instead.';
+      }
+    } catch (err) {
+      formStatus.textContent = 'Network error. Please email me directly instead.';
+    }
+  });
+}

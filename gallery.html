@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Vysakh Ramachandran</title>
+<meta name="description" content="Photo gallery of Vysakh Ramachandran: conference talks, lab life, and fieldwork.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a href="index.html" class="brand">VR</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="teaching.html">Teaching &amp; Achievements</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">
+      <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
+      <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Snapshots</p>
+      <h2 class="section-title">Gallery</h2>
+      <p class="section-lead">Conference talks, lab life, and fieldwork &mdash; photos coming soon.</p>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-placeholder"><span>Add photos to<br><code>image/</code></span></div>
+        <div class="gallery-placeholder"><span>Add photos to<br><code>image/</code></span></div>
+        <div class="gallery-placeholder"><span>Add photos to<br><code>image/</code></span></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Vysakh Ramachandran. Built with HTML, CSS &amp; JavaScript.</p>
+    <a href="https://github.com/VysakhRamachandran" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

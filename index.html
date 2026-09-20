@@ -14,19 +14,19 @@
 
 <header class="site-header">
   <nav class="navbar">
-    <a href="#home" class="brand">VR</a>
+    <a href="index.html" class="brand">VR</a>
 
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
 
     <ul class="nav-links" id="navLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#teaching">Teaching &amp; Achievements</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="teaching.html">Teaching &amp; Achievements</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
 
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">
@@ -39,7 +39,7 @@
 <main>
 
   <!-- ===== HOME ===== -->
-  <section id="home" class="section hero">
+  <section class="section hero">
     <div class="container hero-grid">
       <div class="hero-text">
         <p class="eyebrow">Hi, I'm</p>
@@ -51,7 +51,7 @@
           with a focus on classical and quantum molecular dynamics.
         </p>
         <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="contact.html" class="btn btn-primary">Get in touch</a>
           <a href="assets/Vysakh_Ramachandran_CV.pdf" class="btn btn-outline" download>Download CV</a>
         </div>
         <div class="social-links">
@@ -97,278 +97,6 @@
             <p class="timeline-detail">CGPA: 8.04 / 10</p>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== RESEARCH ===== -->
-  <section id="research" class="section alt-bg">
-    <div class="container">
-      <p class="eyebrow">What I work on</p>
-      <h2 class="section-title">Research</h2>
-      <p class="section-lead">
-        My research asks two central questions: how does RNA&ndash;protein molecular grammar govern and
-        modulate the properties of biomolecular condensates, and how does RNA's inherent propensity for
-        self-assembly and condensate formation vary under different external environmental conditions?
-        I use simulations ranging from all-atom models to hydrophobicity-scale (HPS) coarse-grained models,
-        depending on the system of interest.
-      </p>
-
-      <div class="card-grid">
-        <article class="card">
-          <div class="card-icon">&#129516;</div>
-          <h3>All-Atom Simulation of RNA</h3>
-          <p>
-            Atomistic molecular dynamics of structured and homopolymeric RNAs to map energy landscapes,
-            ion-mediated interactions, and reentrant phase behavior in RNA and RNA&ndash;polycation systems.
-          </p>
-          <figure class="research-card-media">
-            <img src="image/all_atom.png" alt="All-atom RNA simulation illustration" loading="lazy">
-          </figure>
-          <span class="card-badge">Ongoing</span>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">&#128167;</div>
-          <h3>Condensation via All-Atom &amp; HPS Models</h3>
-          <p>
-            Multiscale simulation of biomolecular condensation &mdash; from short peptide/RNA fragments at
-            all-atom resolution to hydrophobicity-scale (HPS) coarse-grained models of multiphase
-            protein&ndash;RNA assemblies.
-          </p>
-          <figure class="research-card-media">
-            <img src="image/conden.png" alt="Biomolecular condensation simulation illustration" loading="lazy">
-          </figure>
-          <span class="card-badge">Ongoing</span>
-        </article>
-      </div>
-
-      <p class="section-note">More research directions will be added here as this page evolves.</p>
-    </div>
-  </section>
-
-  <!-- ===== PUBLICATIONS ===== -->
-  <section id="publications" class="section">
-    <div class="container">
-      <p class="eyebrow">Peer-reviewed work</p>
-      <h2 class="section-title">Publications</h2>
-
-      <ol class="pub-list" reversed>
-        <li class="pub-item">
-          <p class="pub-title">On the nature of nanoscale water properties in peptide condensates</p>
-          <p class="pub-authors"><strong>V Ramachandran</strong>, W Brown, DA Potoyan</p>
-          <p class="pub-meta">2026</p>
-        </li>
-
-        <li class="pub-item">
-          <p class="pub-title">A molecular grammar for programmable multiphase protein&ndash;RNA vesicles</p>
-          <p class="pub-authors"><strong>V Ramachandran</strong>, DA Potoyan</p>
-          <p class="pub-meta">JACS Au &middot; 2026</p>
-        </li>
-
-        <li class="pub-item">
-          <p class="pub-title">Molecular Drivers of RNA Phase Separation</p>
-          <p class="pub-authors"><strong>V Ramachandran</strong>, DA Potoyan</p>
-          <p class="pub-meta">Proc Natl Acad Sci &middot; 2025 &middot;
-            <a href="https://doi.org/10.1073/pnas.2511348122" target="_blank" rel="noopener">DOI</a>
-          </p>
-        </li>
-
-        <li class="pub-item">
-          <p class="pub-title">Nucleoprotein phase-separation affinities revealed via atomistic simulations of short peptide and RNA fragments</p>
-          <p class="pub-authors"><strong>V Ramachandran</strong>, W Brown, DA Potoyan</p>
-          <p class="pub-meta">J Phys Chem Lett &middot; 2024 &middot;
-            <a href="https://doi.org/10.1021/acs.jpclett.4c02654" target="_blank" rel="noopener">DOI</a>
-          </p>
-        </li>
-
-        <li class="pub-item">
-          <p class="pub-title">Atomistic insights into the reentrant phase-transitions in RNA&ndash;polycation mixtures</p>
-          <p class="pub-authors"><strong>V Ramachandran</strong>, DA Potoyan</p>
-          <p class="pub-meta">J Chem Phys &middot; 2024 &middot;
-            <a href="https://doi.org/10.1063/5.0206190" target="_blank" rel="noopener">DOI</a>
-          </p>
-        </li>
-
-        <li class="pub-item">
-          <p class="pub-title">Mapping energy landscapes of homopolymeric RNAs via simulated tempering and deep unsupervised learning</p>
-          <p class="pub-authors"><strong>V Ramachandran</strong>, DA Potoyan</p>
-          <p class="pub-meta">Biophysical J &middot; 2024 &middot;
-            <a href="https://doi.org/10.1016/j.bpj.2024.04.003" target="_blank" rel="noopener">DOI</a>
-          </p>
-        </li>
-
-        <li class="pub-item">
-          <p class="pub-title">Determinants of Viscoelasticity and Flow Activation Energy in Biomolecular Condensates</p>
-          <p class="pub-authors">I Alshareedah, A Singh, S Yang, <strong>V Ramachandran</strong>, A Quinn, DA Potoyan, Priya R. Banerjee</p>
-          <p class="pub-meta">Science Advances &middot; 2023 &middot;
-            <a href="https://doi.org/10.1126/sciadv.adi6539" target="_blank" rel="noopener">DOI</a>
-          </p>
-        </li>
-
-        <li class="pub-item">
-          <p class="pub-title">Dynamic effects of the spine of hydrated magnesium on viral RNA pseudoknot structure</p>
-          <p class="pub-authors"><strong>V Ramachandran</strong>, A Mainan, S Roy</p>
-          <p class="pub-meta">Physical Chemistry Chemical Physics (PCCP) &middot;
-            <a href="https://doi.org/10.1039/D2CP01075E" target="_blank" rel="noopener">DOI</a>
-          </p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- ===== TEACHING & ACHIEVEMENTS ===== -->
-  <section id="teaching" class="section alt-bg">
-    <div class="container">
-      <p class="eyebrow">Beyond research</p>
-      <h2 class="section-title">Teaching &amp; Achievements</h2>
-
-      <div class="two-col">
-        <div>
-          <h3 class="sub-title">Achievements</h3>
-          <ul class="plain-list">
-            <li>
-              <span class="li-title">Joseph F. Nelson Research Award</span>
-              <span class="li-sub">Department of Chemistry, Iowa State University</span>
-              <span class="li-year">2026</span>
-            </li>
-            <li>
-              <span class="li-title">Joseph F. Nelson Graduate Scholarship</span>
-              <span class="li-sub">Department of Chemistry, Iowa State University</span>
-              <span class="li-year">2025</span>
-            </li>
-            <li>
-              <span class="li-title">DST-INSPIRE Scholarship</span>
-              <span class="li-sub">Department of Science and Technology, India &mdash; Innovation in Science Pursuit for Inspired Research</span>
-              <span class="li-year">2016 &ndash; 2021</span>
-            </li>
-            <li>
-              <span class="li-title">Visiting Research Student</span>
-              <span class="li-sub">Department of Chemical Science, IISER Kolkata</span>
-              <span class="li-year">2021 &ndash; 2022</span>
-            </li>
-          </ul>
-
-          <h3 class="sub-title">Presentations</h3>
-          <ul class="plain-list">
-            <li>
-              <span class="li-title">Role of RNA in biomolecular condensate formation (Oral)</span>
-              <span class="li-sub">Biophysical Society Annual Meeting, Los Angeles</span>
-              <span class="li-year">Feb 2025</span>
-            </li>
-            <li>
-              <span class="li-title">Unraveling RNA-driven biomolecular condensate formation (Poster)</span>
-              <span class="li-sub">Biophysical Society Annual Meeting, Los Angeles</span>
-              <span class="li-year">Feb 2025</span>
-            </li>
-            <li>
-              <span class="li-title">Mapping energy landscapes of homopolymeric RNAs via simulated tempering and deep unsupervised learning (Poster)</span>
-              <span class="li-sub">Biophysical Society Annual Meeting, Philadelphia</span>
-              <span class="li-year">Feb 2024</span>
-            </li>
-            <li>
-              <span class="li-title">On the role of water and ion-mediated interactions in re-entrant transitions of RNA-Protein condensates (Poster)</span>
-              <span class="li-sub">Biophysical Society Annual Meeting, San Diego</span>
-              <span class="li-year">Feb 2022</span>
-            </li>
-            <li>
-              <span class="li-title">The spine of hydrated Mg2+ could be detrimental to viral RNA Pseudoknot structure (Poster)</span>
-              <span class="li-sub">Department Chemical Science Day, IISER Kolkata</span>
-              <span class="li-year">Apr 2022</span>
-            </li>
-            <li>
-              <span class="li-title">Development of Structure-Based Polyelectrolyte Theory Helps Capturing Ion-Environment Dependence of Viral RNA Pseudoknot of SARS-CoV-2 (Poster)</span>
-              <span class="li-sub">27th CRSI-NSC Meeting</span>
-              <span class="li-year">Sep 2021</span>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="sub-title">Teaching &mdash; Department of Chemistry, ISU</h3>
-          <ul class="plain-list">
-            <li><span class="li-title">Quantum Chemistry &mdash; CHEM 324</span><span class="li-year">Fall 2025</span></li>
-            <li><span class="li-title">General Chemistry &mdash; CHEM 177L</span><span class="li-year">Summer 2025</span></li>
-            <li><span class="li-title">Quantum Chemistry &mdash; CHEM 324</span><span class="li-year">Spring 2025</span></li>
-            <li><span class="li-title">Quantum Chemistry &mdash; CHEM 324</span><span class="li-year">Autumn 2024</span></li>
-            <li><span class="li-title">General Chemistry for Engineers &mdash; CHEM 167</span><span class="li-year">Autumn 2022</span></li>
-            <li><span class="li-title">General Chemistry &mdash; CHEM 177L</span><span class="li-year">Autumn 2022</span></li>
-            <li><span class="li-title">General Chemistry II &mdash; CHEM 178</span><span class="li-year">Spring 2023</span></li>
-            <li><span class="li-title">General Chemistry Lab II &mdash; CHEM 178L</span><span class="li-year">Spring 2023</span></li>
-          </ul>
-
-          <h3 class="sub-title">Teaching &mdash; Department of Chemical Sciences, IISER-K</h3>
-          <ul class="plain-list">
-            <li><span class="li-title">Statistical Mechanics</span><span class="li-year">Autumn 2021</span></li>
-            <li><span class="li-title">Introduction to Computer Programming</span><span class="li-year">Spring 2020</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== GALLERY ===== -->
-  <section id="gallery" class="section">
-    <div class="container">
-      <p class="eyebrow">Snapshots</p>
-      <h2 class="section-title">Gallery</h2>
-      <p class="section-lead">Conference talks, lab life, and fieldwork &mdash; photos coming soon.</p>
-
-      <div class="gallery-grid" id="galleryGrid">
-        <div class="gallery-placeholder"><span>Add photos to<br><code>image/</code></span></div>
-        <div class="gallery-placeholder"><span>Add photos to<br><code>image/</code></span></div>
-        <div class="gallery-placeholder"><span>Add photos to<br><code>image/</code></span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="section alt-bg">
-    <div class="container">
-      <p class="eyebrow">Let's talk</p>
-      <h2 class="section-title">Contact</h2>
-
-      <div class="contact-grid">
-        <div class="contact-info">
-          <p class="section-lead">
-            Feel free to reach out about research, collaborations, or teaching &mdash; happy to hear from you.
-          </p>
-          <ul class="contact-list">
-            <li>
-              <span class="contact-label">Email</span>
-              <a href="mailto:vysakhchandran02@gmail.com">vysakhchandran02@gmail.com</a>
-            </li>
-            <li>
-              <span class="contact-label">University Email</span>
-              <a href="mailto:vysakhr@iastate.edu">vysakhr@iastate.edu</a>
-            </li>
-            <li>
-              <span class="contact-label">GitHub</span>
-              <a href="https://github.com/VysakhRamachandran" target="_blank" rel="noopener">github.com/VysakhRamachandran</a>
-            </li>
-            <li>
-              <span class="contact-label">Location</span>
-              <span>Iowa State University, Ames, IA</span>
-            </li>
-          </ul>
-        </div>
-
-        <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <div class="form-row">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-row">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-row">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-          <p class="form-status" id="formStatus" role="status"></p>
-        </form>
       </div>
     </div>
   </section>

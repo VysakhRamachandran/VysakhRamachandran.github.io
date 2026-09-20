@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research | Vysakh Ramachandran</title>
+<meta name="description" content="Research overview of Vysakh Ramachandran: RNA and biomolecular condensation studied via all-atom and coarse-grained molecular dynamics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a href="index.html" class="brand">VR</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="teaching.html">Teaching &amp; Achievements</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">
+      <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
+      <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ===== RESEARCH ===== -->
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">What I work on</p>
+      <h2 class="section-title">Research</h2>
+      <p class="section-lead">
+        My research asks two central questions: how does RNA&ndash;protein molecular grammar govern and
+        modulate the properties of biomolecular condensates, and how does RNA's inherent propensity for
+        self-assembly and condensate formation vary under different external environmental conditions?
+        I use simulations ranging from all-atom models to hydrophobicity-scale (HPS) coarse-grained models,
+        depending on the system of interest.
+      </p>
+
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-icon">&#129516;</div>
+          <h3>All-Atom Simulation of RNA</h3>
+          <p>
+            Atomistic molecular dynamics of structured and homopolymeric RNAs to map energy landscapes,
+            ion-mediated interactions, and reentrant phase behavior in RNA and RNA&ndash;polycation systems.
+          </p>
+          <figure class="research-card-media">
+            <img src="image/all_atom.png" alt="All-atom RNA simulation illustration" loading="lazy">
+          </figure>
+          <span class="card-badge">Ongoing</span>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">&#128167;</div>
+          <h3>Condensation via All-Atom &amp; HPS Models</h3>
+          <p>
+            Multiscale simulation of biomolecular condensation &mdash; from short peptide/RNA fragments at
+            all-atom resolution to hydrophobicity-scale (HPS) coarse-grained models of multiphase
+            protein&ndash;RNA assemblies.
+          </p>
+          <figure class="research-card-media">
+            <img src="image/conden.png" alt="Biomolecular condensation simulation illustration" loading="lazy">
+          </figure>
+          <span class="card-badge">Ongoing</span>
+        </article>
+      </div>
+
+      <p class="section-note">More research directions will be added here as this page evolves.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Vysakh Ramachandran. Built with HTML, CSS &amp; JavaScript.</p>
+    <a href="https://github.com/VysakhRamachandran" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
